@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login and registration form</title>
+	<style>
+		body{
+	background-image: url(https://www.linkpicture.com/q/plants.jpg);
+	background-size: cover;
+}
+h1{
+	font-style: italic;
+	color: #acacac;
+}
+.login-page{
+	width: 360px;
+	padding: 10% 0 0;
+	margin: auto;
+}
+.gender{
+	display: inline;
+}
+.form{
+	position: relative;
+	z-index: 100;
+	background-color: transparent;
+	max-width: 75%;
+	margin: 0 auto 100px;
+	padding: 10px;
+	text-align: center;
+}
+.form input{
+	font-size: "roboto", san-serif;
+	outline: 2;
+	background: transparent;
+	width: 100%;
+	border: 10;
+	margin: 0 0 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 12px;
+}
+.form button{
+	font-family: "roboto", san-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: transparent;
+	width: 100%;
+	border: 0;
+	color: #abcd12;
+	font-size: 19px;
+	cursor: pointer;
+}
+.form button:hover,.form button:active{
+		background: #43A047;
+}
+.form .message{
+	margin: 15px 0 0;
+	color: aliceblue;
+	font-size: 12px;
+}
+.form .message a{
+	color: #4caf50;
+	text-decoration: none;
+}
+
+.form .register-form{
+	display: none;
+}
+
+p{
+	color: white;
+	font-size: 15px;
+}
+	</style>
+</head>
+
+<body>
+	<div class="login-page" >
+		<div class="form">
+			<form class="register-form">
+		<h2> Sign Up</h2>
+		<p style=" font-size: 25px" >What's your name </p>
+		<input type="text" name="name" placeholder="First name" required="on">
+		<input type="text" name="name" placeholder="last name" required="on">
+
+		<input type="number" name="phone number" placeholder="+91 0123456789" required="on"></br>
+
+		<input type="email" name="email or number" placeholder="email address (optional)"></br>
+
+		<input type="password" name="password" placeholder="New password" 
+		required="on">
+		<input type="password" name="password" placeholder="Confirm password" required="on"></br>
+		<input type="date" name="month">
+		
+		<p style="font-size: 10px">By clicling Sign Up, You agree to our Terms, Data  Policy and Cookie policy. You may recive SMS notifications  from us and can opt out at any time.
+		</p></br>
+		<input type="submit" name="submit" value="submit" style="color: white;">
+		
+			<p class="message"> Already Registered ?<a href="#">Login </a> </p>
+
+			</form>
+
+			<form class="login-form">
+				<input type="text" placeholder="username">
+				<input type="password" placeholder="password">
+				<button>Login</button>
+				<p class="message">Not registered? <a href="#">Register</a></p>
+			
+			</form>
+
+		</div>
+	</div>
+			<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+
+			<script>
+				$('.message a').click(function(){
+				$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+				});
+			</script>
+
+<body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

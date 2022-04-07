@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Womens shoes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       /* Style the links inside the navigation bar */
+        .topnav{ 
+            width: 100%;
+            padding-right: 50px;
+            background-color: white;
+            position: absolute;
+        }
+        .topnav a {
+        font-family: "Lucida Console", Courier, monospace;
+        float: right;
+        color: #000000;
+        text-align: center;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+        background-color: rgb(32, 182, 149);
+        color: black;
+        }
+
+        /*search  bar css*/
+        .searchbar{
+            display: inline-block;
+            padding-top: 14px;
+            padding-left: 50px;
+        }
+        .search{
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+        #src-icon{
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+                /*shoe selection body css*/
+                .body{
+            width: 70%;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .body div{
+            width: 100%;
+        }
+        .body div:nth-child(1){
+            width: 30%;
+        }
+        .body .left,
+        .body .right{
+            padding: 0.8% 2%;
+        }
+        .body .left{
+            margin-top: -23%;
+        }
+        .category header{
+            font-size: x-large;
+            color: black;
+            padding: 7px 0;
+            font-weight: 700;
+        }
+        .category .cat-links li{
+            list-style: none;
+            padding: 7px 0;
+        }
+        .category .cat-links li a{
+            text-decoration: none;
+            color: black;
+            
+        }
+        .category .cat-links li a:hover{
+            text-decoration: underline;
+        }
+        .body .left .breadcrump{
+            width: 100%;
+        }
+        .body .left .breadcrump a{
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .body .left .breadcrump a:hover{
+            text-decoration: underline;
+        }
+        .filter header{
+            padding: 15px 0;
+            font-weight: 700;
+            font-size: large;
+        }
+        .filter div{
+            padding: 7px 0;
+            display: flex;
+            align-items: center;
+        }
+        .filter div input{
+            width: 15px;
+            height: 15px;
+        }
+        .filter div label{
+            font-size: 15px;
+            margin-left: 8px;
+        }
+        .body .right {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .body .right .item {
+            padding: 15px;
+            width: auto;
+        }
+        .body .right .item img{
+            width: 100%;
+        }
+        .body .right .item:hover{
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+        }
+        .body .right .item header{
+            font-weight: 700;
+            font-size: larger;
+            padding: 2px 0;
+        }
+        .body .right .item p{
+            padding: 2px 0;
+        }
+        .item:hover .quick-add{
+            visibility: visible;
+            opacity: 1;
+        }
+        .item .quick-add{
+            visibility: hidden;
+            opacity: 0;
+        }
+        .quick-add .btn-size{
+            background-color: white;
+            border: 1px solid black;
+            padding: 3px;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            float: left;
+            margin: 2px;
+        }
+        .quick-add .btn-size:hover{
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+         <!--THIS TOP HEAD BAR SECTION-->
+         <div class="topnav" id="myTopnav"> 
+            <div class="img">
+                <img src="https://www.linkpicture.com/q/InCollage_20220330_215918475.jpg"> 
+            </div> 
+            <div class="searchbar"> 
+                <input class="search" type="text"  placeholder=" Search" name="search">
+                <button id="src-icon" type="submit"><i class="fa fa-search"  style="font-size: 18px;"></i></button>  
+            </div>
+                <a href="#about"><i class="fa fa-shopping-cart" style="font-size:18px"> Cart</i></a>
+                <a href="login2.html"><i class='fa fa-user-circle'></i></i></a>
+                <a href="women.html"><i class="fa fa-female"> WOMEN</i></a>
+                <a href="men1.html" class="active"><i class="fa fa-male"> MEN</i></a>
+                <a href="index.html"> <i class="fa fa-home"> Home</i></a>
+        </div><br><br><br><br>
+        <!--END of TOP HEAD BAR SECTION-->
+
+        <!-- shoe selection-->
+        <div class="body">
+            <div class="left">
+                <div class="breadcrump">
+                    <p> <a href="">Home</a> / <a href="">Men's Shoes</a> /</p>
+                </div>
+                <div class="category">
+                    <header>Everyday Sneakers</header>
+                    <ul class="cat-links">
+                        <li><a href="#">Everyday Sneakers</a></li>
+                        <li><a href="#">Running Shoes</a></li>
+                        <li><a href="#">Water-Repellant Shoes</a></li>
+                        <li><a href="#">Trail Running Shoes</a></li>
+                        <li><a href="#">Slip-Ons</a></li>
+                        <li><a href="#">High-Tops</a></li>
+                    </ul>
+                </div>
+                <div class="filter">
+                    <header>Filter By:</header>
+                    <hr/>
+                    <header>BEST FOR</header>
+                    <div>
+                        <input type="checkbox" id="Everyday">
+                        <label for="Everyday">Everyday</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="warm-weather"> 
+                        <label for="warm-weather">Warm Weather</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Cool-Weather"> 
+                        <label for="Cool-Weather">Cool Weather</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Wet-Weather"> 
+                        <label for="Wet-Weather">Wet Weather</label>
+                    </div>
+                    <br/>
+                    <hr/>
+                    <header>MATERIAL</header>
+                        <div>
+                            <input type="checkbox" id="Everyday">
+                            <label for="Everyday">Everyday</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="warm-weather"> 
+                            <label for="warm-weather">Warm Weather</label>
+                        </div>
+                    <br/>
+                    <hr/>
+                </div>
+            </div>
+            <div class="right">
+                <div class="item">
+                    <img style="width: 100%; height: 200px;" src="https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/6pRQuTa3aBDHxs8TpQSn8H/2" alt="">
+                    <header style="font-family:monospace;">Women's Tree Pipers</header>
+                    <p>Luna (white Sole)</p>
+                    <p>$135</p>
+                    <div class="quick-add">
+                        <header>Quick Add</header>
+                        <button class="btn-size">07</button>
+                        <button class="btn-size">08</button>
+                        <button class="btn-size">09</button>
+                        <button class="btn-size">10</button>
+                        <button class="btn-size">11</button>
+                        <button class="btn-size">12</button>
+                        <button class="btn-size">13</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img style="width: 100%; height: 200px;" src="https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1649112738/production/colorway/en-US/images/5YO3Xm6wQBrsTLL2ZuVa6x/2.png" alt="">
+                    <header style="font-family:monospace;">Women's Staple dashers</header>
+                    <p>Multi Melange (Easy Beige Sole)</p>
+                    <p>$115</p>
+                    <div class="quick-add">
+                        <button class="btn-size">07</button>
+                        <button class="btn-size">08</button>
+                        <button class="btn-size">09</button>
+                        <button class="btn-size">10</button>
+                        <button class="btn-size">11</button>
+                        <button class="btn-size">12</button>
+                        <button class="btn-size">13</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img style="width: 100%; height: 200px;" src="https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/6xFsKUjrRCBzZEta4twjTT/1" alt="">
+                    <header style="font-family:monospace;">Women's Wool Runner Mizzles</header>
+                    <p>Hazy Pine  (Natural white Sole)</p>
+                    <p>$105</p>
+                    <div class="quick-add">
+                        <header>Quick Add</header>
+                        <button class="btn-size">07</button>
+                        <button class="btn-size">08</button>
+                        <button class="btn-size">09</button>
+                        <button class="btn-size">10</button>
+                        <button class="btn-size">11</button>
+                        <button class="btn-size">12</button>
+                        <button class="btn-size">13</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img style="width: 100%; height: 200px;" src="https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/7oi07pv8cVyv0s5VDcAhDZ/1" alt="">
+                    <header style="font-family:monospace;">Women's Wool Runner-up Mizzles</header>
+                    <p>True Black (Black Sole)</p>
+                    <p>$109</p>
+                    <div class="quick-add">
+                        <button class="btn-size">07</button>
+                        <button class="btn-size">08</button>
+                        <button class="btn-size">09</button>
+                        <button class="btn-size">10</button>
+                        <button class="btn-size">11</button>
+                        <button class="btn-size">12</button>
+                        <button class="btn-size">13</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img style="width: 100%; height: 200px;" src="https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/grNQmXam4U6xCwCEJiUXn/2" alt="">
+                    <header style="font-family:monospace;">Women's Wool Pipers </header>
+                    <p>Dark Jungle  (Blizzard Sole)</p>
+                    <p>$100</p>
+                    <div class="quick-add">
+                        <header>Quick Add</header>
+                        <button class="btn-size">07</button>
+                        <button class="btn-size">08</button>
+                        <button class="btn-size">09</button>
+                        <button class="btn-size">10</button>
+                        <button class="btn-size">11</button>
+                        <button class="btn-size">12</button>
+                        <button class="btn-size">13</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img style="width: 100%; height: 200px;" src="https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/51fJNzpqEYwRLJa7ZRIskX/1" alt="">
+                    <header style="font-family:monospace;">Women's Tree Runners</header>
+                    <p>Buoyant Blue (Blizzard Sole)</p>
+                    <p>$205</p>
+                    <div class="quick-add">
+                        <button class="btn-size">07</button>
+                        <button class="btn-size">08</button>
+                        <button class="btn-size">09</button>
+                        <button class="btn-size">10</button>
+                        <button class="btn-size">11</button>
+                        <button class="btn-size">12</button>
+                        <button class="btn-size">13</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="D:\rest\js\bootstrap.bundle.js.map" >
+        </script>
+</body>
+</html>
